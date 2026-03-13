@@ -1,0 +1,13 @@
+
+target/
+dbt_packages/
+logs/
+# Ignorar credenciais do Google Cloud
+credenciais_bq.json
+
+# Ignorar ambiente virtual Python
+venv/
+
+# Ignorar arquivos de configuração da IDE
+*.iml
+.idea/

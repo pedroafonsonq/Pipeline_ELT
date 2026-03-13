@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim_lugares
+    columns:
+      - name: id
+        data_tests:  # Mudamos de 'tests' para 'data_tests'
+          - unique
+          - not_null
+      - name: status
+        data_tests:
+          - accepted_values:
+              values: ['ativo']
